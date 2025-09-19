@@ -87,23 +87,155 @@ Backend (Django REST Framework)
 📂 Project Structure
 
 Frontend (Project2-Frontend/)
-    src/
+    
+  src/
 
-     ├── components/
+  ├── components/
 
-     │    ├── CandidateForm.js
+  │    ├── CandidateForm.js
 
-     │    ├── CandidateList.js
+  │    ├── CandidateList.js
 
-     │    ├── JobForm.js
+  │    ├── JobForm.js
 
-     │    ├── JobList.js
+  │    ├── JobList.js
 
-     │    ├── JobDetails.js
+  │    ├── JobDetails.js
 
-     │    └── Navbar.js
+  │    └── Navbar.js
 
-     ├── App.js
+  ├── App.js
 
-     └── index.js
+  └── index.js
+
+Backend (Project2-Backend/)
+
+ project2_backend/
+
+ ├── api/
+
+ │    ├── models.py
+
+ │    ├── serializers.py
+
+ │    ├── views.py
+
+ │    ├── urls.py
+
+ ├── project2_backend/
+
+ │    ├── settings.py
+
+ │    ├── urls.py
+
+ ├── manage.py
+
+⚙️ Installation & Setup
+
+1️⃣ Backend (Django + MySQL)
+
+    # Navigate to backend folder
+    cd Project2-Backend
+    
+    # Create virtual environment
+    python -m venv venv
+    venv\Scripts\activate   # On Windows
+    
+    # Install dependencies
+    pip install django djangorestframework mysqlclient
+    
+    # Make migrations
+    python manage.py makemigrations
+    python manage.py migrate
+    
+    # Run server
+    python manage.py runserver
+    
+  The API will be available at:
+  
+👉 http://127.0.0.1:8000/api/
+
+2️⃣ Frontend (React.js)
+
+    # Navigate to frontend folder
+    cd Project2-Frontend
+    
+    # Install dependencies
+    npm install
+    
+    # Start React app
+    npm start
+
+  The frontend will be available at:
+  
+👉 http://localhost:3000/
+
+📌 API Endpoints
+
+Candidates
+
+  ->GET /api/candidates/ → List all candidates
+  
+  ->POST /api/candidates/ → Add new candidate
+  
+  ->PUT /api/candidates/<id>/ → Update candidate
+  
+  ->DELETE /api/candidates/<id>/ → Delete candidate
+
+Jobs
+
+  ->GET /api/jobs/ → List all jobs
+  
+  ->POST /api/jobs/ → Add new job
+  
+  ->PUT /api/jobs/<id>/ → Update job
+  
+  ->DELETE /api/jobs/<id>/ → Delete job
+
+Applicants
+
+  ->GET /api/jobs/<job_id>/applicants/ → Get all applicants for a job
+  
+
+✅ Example UI Screens
+
+Candidates List
+
+    Candidates
+    ---------
+    Name: Gowtham
+    Email: gowtham@gmail.com
+    Phone: 9876543210
+    Status: Applied
+Jobs List
+
+    Jobs
+    ---------
+    Title: Frontend Developer
+    Description: React.js Developer with 2 years exp.
+    Skills: React, JavaScript
+    Recruiter: HR Team
+
+Job Details & Applicants
+
+    Job Details & Applicants
+    ------------------------
+    Applicants for Job ID: 1
+    sirija
+    Email: siri@gmail.com
+    Phone: 8639497329
+    Status: Applied
+    
+    gowtham
+    Email: gani@gmail.com
+    Phone: 9390392260
+    Status: Applied
+    
+    ravi
+    Email: ravi@gmail.com
+    Phone: 9000794113
+    Status: Applied
+    
+    Total Applicants: 3
+
 
