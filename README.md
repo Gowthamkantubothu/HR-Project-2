@@ -88,13 +88,22 @@ Backend (Django REST Framework)
 
 Frontend (Project2-Frontend/)
     src/
+
      ├── components/
+
      │    ├── CandidateForm.js
+
      │    ├── CandidateList.js
+
      │    ├── JobForm.js
+
      │    ├── JobList.js
+
      │    ├── JobDetails.js
+
      │    └── Navbar.js
+
      ├── App.js
+
      └── index.js
 
