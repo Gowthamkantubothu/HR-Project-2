@@ -1,5 +1,6 @@
 # HR-Project-2
-#Job Posting & Application Portal
+# Job Posting & Application Portal
+
 📌 Project Overview
 
 The Job Posting & Application Portal is a web application that allows HR recruiters to post jobs, manage candidates, and track applicants.
