@@ -15,7 +15,10 @@ This system simplifies the recruitment workflow by offering:
 
 This project is the second module of the HR Management System (interconnected with Project 1 – Candidate Management System).
 
-🚀 Features
+
+
+# 🚀 Features
+
 🔹 Candidates
 
   ->Add new candidates with details (name, email, phone number, resume link, status).
@@ -66,7 +69,8 @@ This project is the second module of the HR Management System (interconnected wi
   
    -Job Details & Applicants
 
-🏗️ Tech Stack
+
+# 🏗️ Tech Stack
 
 Frontend (React.js)
 
@@ -84,7 +88,8 @@ Backend (Django REST Framework)
 
   ->MySQL (Database)
 
-📂 Project Structure
+
+# 📂 Project Structure
 
 Frontend (Project2-Frontend/)
     
@@ -130,6 +135,7 @@ Backend (Project2-Backend/)
 
  ├── manage.py
 
+
 ⚙️ Installation & Setup
 
 1️⃣ Backend (Django + MySQL)
@@ -170,7 +176,8 @@ Backend (Project2-Backend/)
   
 👉 http://localhost:3000/
 
-📌 API Endpoints
+
+# 📌 API Endpoints
 
 Candidates
 
@@ -197,7 +204,7 @@ Applicants
   ->GET /api/jobs/<job_id>/applicants/ → Get all applicants for a job
   
 
-✅ Example UI Screens
+# ✅ Example UI Screens
 
 Candidates List
 
