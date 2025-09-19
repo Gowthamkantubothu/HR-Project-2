@@ -1,5 +1,4 @@
-# HR-Project-2
-# Job Posting & Application Portal
+# HR-Project-2(Job Posting & Application Portal)
 
 📌 Project Overview
 
